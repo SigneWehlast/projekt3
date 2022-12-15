@@ -3,13 +3,28 @@ body {
     background-color: #F6F1C8;
     background-image: url('img/symboler.png');
     background-size: 600px 940px;
-    background-position-y: 190px;
+    background-position-y: 100px;
 }
+
+/*fonts*/
+@font-face {
+    font-family: myFont;
+    src: url(font/Laila-Regular.ttf);
+}
+
+@font-face {
+    font-family: paragrafFont;
+    src: url(font/Niramit-Regular.ttf);
+}
+
+
+/*mobil versionen forsiden*/
 
 .header {
     height: 100px;
     width: auto;
     background-color: #13320F;
+    /*så headeren går helt ud til kanten af siden*/
     margin: -10px;
 }
 
@@ -34,7 +49,7 @@ body {
 }
 
 .paragraf {
-    font-family: sans-serif;
+    font-family: paragrafFont;
     font-size: 14px;
     text-align: justify;
     color: white;
@@ -80,7 +95,7 @@ body {
     width: 120px;
     background-color: #C5A643;
     position: relative;
-    top: 65px;
+    top: 55px;
     left: 45px;
     border-radius: 30px;
     font-family: sans-serif;
@@ -89,14 +104,16 @@ body {
 
 .tekstknap {
     position: relative;
-    top: 7px;
+    top: 4px;
+    font-family: myFont;
 }
 
 
 .tekstforside {
     position: relative;
-    top: 70px;
+    top: 60px;
     left: 10px;
+    line-height: 20px;
 }
 
 
@@ -122,6 +139,7 @@ body {
     text-align: center;
     padding-top: 15px;
     margin-left: 10px;
+    font-family: paragrafFont;
 }
 
 .knapper {
@@ -157,11 +175,10 @@ body {
 }
 
 .tekstknapf {
-    font-family: sans-serif;
     text-align: center;
     position: relative;
     top: 3px;
-    font-family: sans-serif;
+    font-family: myFont;
     font-size: 13px;
 }
 
@@ -169,8 +186,146 @@ body {
     background-color: #F6F1C8;
 }
 
+/*specifikt til om mig siden*/
+.blackbox {
+    height: 550px;
+    width: 400px;
+    /*sætter farven til sort og kun opacity på boksen*/
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 45px;
+    margin: auto;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-family: myFont;
+    
+}
+
+.paragrafom {
+    font-family: paragrafFont;
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+    margin: 20px 30px;
+    line-height: 25px;
+}
+
+.ommigbillede {
+    border-radius: 50%;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+.footerommig {
+    height: 50px;
+    width: auto;
+    background-color: #13320F;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+/*kontakt siden*/
+.kontaktbillede {
+    border-radius: 50%;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+.paragrafkontakt{
+    font-family: paragrafFont;
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+    margin: 20px 30px;
+    line-height: 25px;
+}
+
+/*Portfolio siden*/
+
+.billede1 {
+    width: 244px;
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+    background-color: white;
+    margin-top: -50px;
+    position: relative;
+    top: 40px;
+}
+.billede2 {
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+    width: 244px;
+    margin-top: 20px;
+    position: relative;
+    top: 40px;
+}
+.billede3 {
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+    width: 244px;
+    margin-top: 20px;
+    position: relative;
+    top: 40px;
+}
+
+.billede5 {
+    width: 500px;
+    height: 500px;
+    background: url('img/delfin2.png') 0 0 no-repeat;
+    animation: delfin 3s steps(6) infinite;
+    scale:49%;
+    margin: auto;
+    border-radius: 60px;
+    margin-top: -105px;
+    left: -50px;
+    position: relative;
+    top: 40px;
+}
+
+@keyframes delfin {
+    0% {background-position:0px;}
+    100% {background-position: -3000px;}
+}
+
+.video {
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+    scale: 120%;
+    margin-top: -90px;
+    position: relative;
+    top: 40px;
+}
+
+
+.blackbox2 {
+    height: 1750px;
+    width: 400px;
+    /*sætter farven til sort og kun opacity på boksen*/
+    background: rgba(0, 0, 0, 0.3);
+    margin: auto;
+    border-radius: 30px;
+    z-index: -1;
+    position: relative;
+    top: 45px;
+}
 
 @media only screen and (min-width: 768px) {
+
+    /*iPad versionen forsiden*/
     body {
         min-height: 100vh;
         background-color: #F6F1C8;
@@ -264,17 +419,84 @@ body {
         font-size: 16px;
     }
 
+    /*Om mig siden*/
+    .blackbox {
+        height: 720px;
+        width: 700px;
+        top: 45px;
+    }
+    
+    h1 {
+        padding: 5px;
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    
+    .paragrafom {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    .ommigbillede {
+        height: 350px;
+    }
+    
+
+    /*Kontakt siden*/
+
+    .kontaktbillede {
+        height: 350px;
+    }
+
+    .paragrafkontakt {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    /*Portfolio*/
+    .billede1 {
+        width: 300px;
+        margin-top: -50px;
+    }
+    .billede2 {
+        
+        width: 300px;
+        margin-top: 20px;
+    }
+    .billede3 {
+        width: 300px;
+        margin-top: 20px;
+    }
+    
+    .billede5 {
+        scale:60%;
+        border-radius: 60px;
+        margin-top: -80px;
+        left: -50px;
+    }
+
+    .video {
+        border-radius: 30px;
+        scale: 150%;
+        margin-top: -45px;
+    }
+    
+    
+    .blackbox2 {
+        height: 2150px;
+        width: 400px;
+        top: 45px;
+    }
+    
 
 }
 
 @media only screen and (min-width: 1024px) {
 
+    /*Web versionen forsiden*/
     body {
-        min-height: 100vh;
-        background-color: #F6F1C8;
-        background-image: url('img/symboler.png');
         background-size: 600px 940px;
-        background-position-y: 85px;
+        background-position-y: 100px;
     }
 
 
@@ -375,5 +597,88 @@ body {
         font-size: 16px;
     }
 
+    /*Om mig siden*/
+    .blackbox {
+        height: 600px;
+        width: 1150px;
+        top: 45px;
+    }
     
+    h1 {
+        font-size: 40px;
+    }
+    
+    .paragrafom {
+        font-size: 22px;
+        line-height: 35px;
+        margin-left: 50px;
+        margin-top: -340px;
+        width: 333px;
+    }
+    
+    .ommigbillede {
+        height: 333px;
+        margin-right: 50px;
+        margin-top: 70px;
+    }
+
+
+    /*Kontakt siden*/
+    .kontaktbillede {
+        height: 333px;
+        margin-left: 50px;
+        margin-top: 70px;
+    }
+
+    .paragrafkontakt {
+        font-size: 22px;
+        line-height: 35px;
+        margin-left: 766px;
+        margin-top: -340px;
+        width: 333px; 
+    }
+    
+    /*Portfolio siden*/
+    
+    .billede1 {
+        height: 333px;
+        width: auto;
+        margin-left: 50px;
+        margin-top: -50px;
+    }
+    .billede2 {
+        height: 333px;
+        width: auto;
+        margin-top: 0px;
+        top:-295px;
+    }
+    .billede3 {
+        height: 333px;
+        width: auto;
+        margin-top: 0px;
+        margin-right: 50px;
+        top: -635px;
+    }
+    
+    .billede5 {
+        top:-450px;
+        margin-top: -108px;
+        left: -375px;
+
+    }
+    
+    .video {
+        position: absolute;
+        scale: 200%;
+        top: 725px;
+        right: 150px;
+    }
+    
+    
+    .blackbox2 {
+        height: 1050px;
+        width: 1150px;
+        position: relative;
+        top: 45px;
+    }
 }
