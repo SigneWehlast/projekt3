@@ -29,13 +29,12 @@ body {
 }
 
 .logo {
-    background: url('img/logo.png') no-repeat;
-    width: 162px;
-    height: 159px;
-    scale: 55%;
+    background: url('img/logonyt2_Tegnebræt\ 1.png') no-repeat;
+    width: 110px;
+    height: 110px;
     position: relative;
-    top: -30px;
-    left: 0px;
+    top: 10px;
+    left: 10px;
 }
 
 #mig {
@@ -93,7 +92,7 @@ body {
 .knapforside {
     height: 30px;
     width: 120px;
-    background-color: #C5A643;
+    background-color: #CDAD4C;
     position: relative;
     top: 55px;
     left: 45px;
@@ -106,6 +105,8 @@ body {
     position: relative;
     top: 4px;
     font-family: myFont;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -143,10 +144,6 @@ body {
 }
 
 .knapper {
-    height: 25px;
-    width: 70px;
-    background-color: #C5A643;
-    border-radius: 30px;
     text-align: center;
 }
 
@@ -159,7 +156,7 @@ body {
 .portfolioknap {
     position: absolute;
     top: 35px;
-    right: 165px;
+    right: 160px;
 }
 
 .ommigknap {
@@ -171,7 +168,7 @@ body {
 .kontaktknap {
     position: absolute;
     top: 35px;
-    right: 15px;
+    right: 20px;
 }
 
 .tekstknapf {
@@ -180,10 +177,17 @@ body {
     top: 3px;
     font-family: myFont;
     font-size: 13px;
+    color: white;
+    text-decoration: none;
 }
 
 .valgtknap {
-    background-color: #F6F1C8;
+    color: #CDAD4C;
+}
+
+/*kun knapperne i headeren har hover*/
+.knapper > a:hover {
+    color: #CDAD4C;
 }
 
 /*specifikt til om mig siden*/
@@ -258,61 +262,51 @@ h1 {
     margin: auto;
     display: block;
     background-color: white;
-    margin-top: -50px;
-    position: relative;
-    top: 40px;
+    margin-top: 10px;
 }
 .billede2 {
     border-radius: 30px;
     margin: auto;
     display: block;
     width: 244px;
-    margin-top: 20px;
-    position: relative;
-    top: 40px;
+    margin-top: 70px;
 }
 .billede3 {
-    border-radius: 30px;
-    margin: auto;
-    display: block;
-    width: 244px;
-    margin-top: 20px;
-    position: relative;
-    top: 40px;
+        border-radius: 30px;
+        width: 244px;
+        margin: auto;
+        display: block;
+        margin-top: 70px;
 }
 
 .billede5 {
-    width: 500px;
-    height: 500px;
-    background: url('img/delfin2.png') 0 0 no-repeat;
+    width: 333px;
+    height: 333px;
+    background: url('img/ny.png') 0 0 no-repeat;
     animation: delfin 3s steps(6) infinite;
-    scale:49%;
     margin: auto;
     border-radius: 60px;
-    margin-top: -105px;
-    left: -50px;
-    position: relative;
-    top: 40px;
+    margin-top: 70px;
 }
 
 @keyframes delfin {
     0% {background-position:0px;}
-    100% {background-position: -3000px;}
+    100% {background-position: -1998px;}
 }
 
 .video {
     margin: auto;
     display: block;
+    width: 244px;
+    height: auto;
     border-radius: 30px;
-    scale: 120%;
-    margin-top: -90px;
+    margin-top: 70px;
     position: relative;
-    top: 40px;
 }
 
 
 .blackbox2 {
-    height: 1750px;
+    height: 2100px;
     width: 400px;
     /*sætter farven til sort og kun opacity på boksen*/
     background: rgba(0, 0, 0, 0.3);
@@ -322,6 +316,39 @@ h1 {
     position: relative;
     top: 45px;
 }
+
+.billedetekst {
+    position: absolute;
+    color: white;
+    font-family: paragrafFont;
+    line-height: 18px;
+}
+
+.p1 {
+   left: 95px;  
+   top: 417px;
+}
+
+.p2 {
+    left: 95px;
+    top: 852px;
+}
+
+.p3 {
+    left: 95px;
+    top: 1320px;
+}
+
+.p4 {
+    left: 95px;
+    top: 1575px;
+}
+
+.p5 {
+    left: 60px;
+    top: 1980px;
+}
+
 
 @media only screen and (min-width: 768px) {
 
@@ -392,14 +419,9 @@ h1 {
         text-align: left;
     }
 
-    
-    .knapper {
-        height: 30px;
-        width: 120px;
-    }
 
     .forsideknap {
-        right: 450px;
+        right: 420px;
     }
 
     .portfolioknap {
@@ -407,11 +429,11 @@ h1 {
     }
 
     .ommigknap {
-        right: 170px;
+        right: 200px;
     }
 
     .kontaktknap {
-        right: 30px;
+        right: 90px;
     }
 
     .tekstknapf {
@@ -456,35 +478,64 @@ h1 {
     /*Portfolio*/
     .billede1 {
         width: 300px;
-        margin-top: -50px;
+        margin-top: 20px;
     }
     .billede2 {
         
         width: 300px;
-        margin-top: 20px;
+        margin-top: 80px;
     }
     .billede3 {
         width: 300px;
-        margin-top: 20px;
     }
     
     .billede5 {
-        scale:60%;
         border-radius: 60px;
-        margin-top: -80px;
+        margin-top: 80px;
     }
 
     .video {
         border-radius: 30px;
-        scale: 150%;
-        margin-top: -45px;
+        margin-top: 80px;
+        width: 300px;
+        height: auto;
     }
     
     
     .blackbox2 {
-        height: 2150px;
+        height: 2480px;
         width: 400px;
         top: 45px;
+    }
+    
+    /*Tekst under billeder*/
+    .billedetekst {
+        font-size: 18px;
+    }
+    
+    .p1 {
+       left: 90px;  
+       top: 525px;
+    }
+    
+    .p2 {
+        left: 90px;
+        top: 1055px;
+    }
+    
+    .p3 {
+        left: 90px;
+        top: 1625px;
+    }
+    
+    .p4 {
+        left: 90px;
+        top: 1930px;
+    }
+    
+    .p5 {
+        left: 65px;
+        top: 2345px;
     }
     
 
@@ -569,14 +620,8 @@ h1 {
         text-align: left;
     }
 
-    
-    .knapper {
-        height: 30px;
-        width: 120px;
-    }
-
     .forsideknap {
-        right: 450px;
+        right: 420px;
     }
 
     .portfolioknap {
@@ -584,11 +629,11 @@ h1 {
     }
 
     .ommigknap {
-        right: 170px;
+        right: 200px;
     }
 
     .kontaktknap {
-        right: 30px;
+        right: 90px;
     }
 
     .tekstknapf {
@@ -643,41 +688,71 @@ h1 {
         height: 333px;
         width: auto;
         margin-left: 50px;
-        margin-top: -50px;
+        margin-top: -20px;
     }
     .billede2 {
         height: 333px;
         width: auto;
-        margin-top: 0px;
-        top:-295px;
+        top: -413px;
+        position: relative;
     }
     .billede3 {
+        position: absolute;
+        border-radius: 30px;
         height: 333px;
         width: auto;
-        margin-top: 0px;
-        margin-right: 50px;
-        top: -635px;
+        top: 24px;
+        right: 50px;
     }
     
     .billede5 {
-        top:-450px;
-        margin-top: -108px;
-        left: -375px;
-
+        top: -388px;
+        left: -358px;
+        position: relative;
     }
     
     .video {
         position: absolute;
-        scale: 200%;
-        top: 725px;
-        right: 150px;
+        height: 333px;
+        width: auto;
+        top: 453px;
+        right: 50px;
     }
     
     
     .blackbox2 {
-        height: 1050px;
+        height: 970px;
         width: 1150px;
         position: relative;
         top: 45px;
+    }
+
+    .billedetekst {
+        font-size: 16px;
+    }
+    
+    .p1 {
+       left: 65px;  
+       top: 415px;
+    }
+    
+    .p2 {
+        left: 475px;
+        top: 415px;
+    }
+    
+    .p3 {
+        left: 890px;
+        top: 415px;
+    }
+    
+    .p4 {
+        left: 800px;
+        top: 855px;
+    }
+    
+    .p5 {
+        left: 30px;
+        top: 320px;
     }
 }
