@@ -1,4 +1,6 @@
+/*Styling af bodyen på alle sider*/
 body {
+    /*Bodyen er altid højden på webbrowserens viewport (billedet på skærmen)*/
     min-height: 100vh;
     background-color: #F6F1C8;
     background-image: url('img/symboler.png');
@@ -19,7 +21,6 @@ body {
 
 
 /*mobil versionen forsiden*/
-
 .header {
     height: 100px;
     width: auto;
@@ -32,28 +33,36 @@ body {
     background: url('img/logonyt2_Tegnebræt\ 1.png') no-repeat;
     width: 110px;
     height: 110px;
+    /*Er positioneret relativt i forhold til dens normale position på siden*/
     position: relative;
+    /*Hvor den er placeret i forhold til den normale position*/
     top: 10px;
-    left: 10px;
+    left: 25px;
 }
 
+/*Billede på forsiden*/
 #mig {
     height: 250px;
     width: auto;
     border-radius: 50%;
     position: relative;
     top: 40px;
+    /*Når den er block, så starter den på en ny linje og fylder hele siden*/
     display: block;
+    /*Browseren bestemmer margin, når den er auto*/
     margin: auto;
 }
 
+/*Tekst på forside og footer*/
 .paragraf {
     font-family: paragrafFont;
     font-size: 14px;
+    /*Gør så teksten fylder lige meget på alle linjer*/
     text-align: justify;
     color: white;
 }
 
+/*Bokse på forsiden*/
 .portfolioforside {
     height: 195px;
     width: 205px;
@@ -89,27 +98,28 @@ body {
     margin: auto;
 }
 
+/*Knapper på forsiden*/
 .knapforside {
     height: 30px;
     width: 120px;
-    background-color: #CDAD4C;
+    background-color: #C09F39;
     position: relative;
     top: 55px;
     left: 45px;
     border-radius: 30px;
-    font-family: sans-serif;
     text-align: center;
 }
 
+/*Tekst på knapper på forsiden*/
 .tekstknap {
     position: relative;
-    top: 4px;
     font-family: myFont;
     color: white;
+    /*Gør så der ikke er streg under linket*/
     text-decoration: none;
 }
 
-
+/*Tekst i bokse på forsiden*/
 .tekstforside {
     position: relative;
     top: 60px;
@@ -117,10 +127,11 @@ body {
     line-height: 20px;
 }
 
-
+/*Symboler på forside*/
 .gren {
     height: 44px;
     width: 75px;
+    /*Har position tættest på den nærmeste positionerede element*/
     position: absolute;
     top: 10px;
     left: 60px;
@@ -131,11 +142,13 @@ body {
     width: auto;
     background-color: #13320F;
     margin-top: 150px;
+    /*Gør så den går ud til kanten af siden*/
     margin-bottom: -10px;
     margin-right: -10px;
     margin-left: -10px;
 }
 
+/*Tekst i footer*/
 .pfooter {
     text-align: center;
     padding-top: 15px;
@@ -143,6 +156,7 @@ body {
     font-family: paragrafFont;
 }
 
+/*Knapper i headeren*/
 .knapper {
     text-align: center;
 }
@@ -171,6 +185,7 @@ body {
     right: 20px;
 }
 
+/*Tekst på knapper i headeren*/
 .tekstknapf {
     text-align: center;
     position: relative;
@@ -181,16 +196,20 @@ body {
     text-decoration: none;
 }
 
+/*Den knap som siden er på*/
 .valgtknap {
-    color: #CDAD4C;
+    color: #C09F39;
 }
 
 /*kun knapperne i headeren har hover*/
 .knapper > a:hover {
-    color: #CDAD4C;
+    color: #C09F39;
 }
 
+
 /*specifikt til om mig siden*/
+
+/*Boksen foran baggrunden*/
 .blackbox {
     height: 550px;
     width: 400px;
@@ -200,17 +219,19 @@ body {
     top: 45px;
     margin: auto;
     border-radius: 30px;
+    /*Bliver placeret bag teksten og billederne*/
     z-index: -1;
 }
 
+/*Overskriften på de tre undersider*/
 h1 {
     text-align: center;
     color: white;
     padding: 5px;
-    font-family: myFont;
-    
+    font-family: myFont;    
 }
 
+/*Tekst på om mig siden*/
 .paragrafom {
     font-family: paragrafFont;
     font-size: 15px;
@@ -220,6 +241,7 @@ h1 {
     line-height: 25px;
 }
 
+/*Billede på om mig siden*/
 .ommigbillede {
     border-radius: 50%;
     height: 250px;
@@ -227,6 +249,7 @@ h1 {
     margin: auto;
 }
 
+/*Footer på om mig siden*/
 .footerommig {
     height: 50px;
     width: auto;
@@ -237,7 +260,10 @@ h1 {
     margin-left: -10px;
 }
 
+
 /*kontakt siden*/
+
+/*Billede på kontakt siden*/
 .kontaktbillede {
     border-radius: 50%;
     height: 250px;
@@ -245,6 +271,7 @@ h1 {
     margin: auto;
 }
 
+/*Teksten på kontakt siden*/
 .paragrafkontakt{
     font-family: paragrafFont;
     font-size: 15px;
@@ -256,6 +283,7 @@ h1 {
 
 /*Portfolio siden*/
 
+/*Billeder, animation og video på portfolio siden*/
 .billede1 {
     width: 244px;
     border-radius: 30px;
@@ -264,6 +292,7 @@ h1 {
     background-color: white;
     margin-top: 10px;
 }
+
 .billede2 {
     border-radius: 30px;
     margin: auto;
@@ -271,6 +300,7 @@ h1 {
     width: 244px;
     margin-top: 70px;
 }
+
 .billede3 {
         border-radius: 30px;
         width: 244px;
@@ -279,10 +309,13 @@ h1 {
         margin-top: 70px;
 }
 
+/*Animationen i CSS*/
 .billede5 {
     width: 333px;
     height: 333px;
-    background: url('img/ny.png') 0 0 no-repeat;
+    /*Skal starte i punkt 0 0 og ikke gentages*/
+    background: url('img/delfin.png') 0 0 no-repeat;
+    /*skal vare i 3 sekunder, er i 6 billeder og skal fortsætte med at køre*/
     animation: delfin 3s steps(6) infinite;
     margin: auto;
     border-radius: 60px;
@@ -304,7 +337,7 @@ h1 {
     position: relative;
 }
 
-
+/*Boksen foran baggrunden*/
 .blackbox2 {
     height: 2100px;
     width: 400px;
@@ -317,6 +350,7 @@ h1 {
     top: 45px;
 }
 
+/*Teksten under billederne på portfolio siden*/
 .billedetekst {
     position: absolute;
     color: white;
@@ -324,6 +358,7 @@ h1 {
     line-height: 18px;
 }
 
+/*Hvor teksten skal placeres under hvert billede*/
 .p1 {
    left: 95px;  
    top: 417px;
@@ -350,6 +385,8 @@ h1 {
 }
 
 
+/*Ipad versionen!
+De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som skal ændres, skrives ind*/
 @media only screen and (min-width: 768px) {
 
     /*iPad versionen forsiden*/
@@ -366,7 +403,7 @@ h1 {
         top: 40px;
     }
 
-
+    /*Bokse på forsiden*/
     .portfolioforside {
         height: 245px;
         width: 257px;
@@ -397,10 +434,12 @@ h1 {
         left: 80px;
     }
 
+    /*Tekst på forsiden*/
     .paragraf {
         font-size: 17px;
     }
 
+    /*Knapperne på forsiden*/
     .knapforside {
         height: 38px;
         width: 160px;
@@ -409,6 +448,7 @@ h1 {
         border-radius: 30px;
     }
 
+    /*Tekst på forsiden*/
     .tekstforside {
         top: 75px;
         left: 15px;
@@ -419,7 +459,7 @@ h1 {
         text-align: left;
     }
 
-
+    /*Knapper i headeren*/
     .forsideknap {
         right: 420px;
     }
@@ -440,6 +480,7 @@ h1 {
         top: 5px;
         font-size: 16px;
     }
+
 
     /*Om mig siden*/
     .blackbox {
@@ -465,7 +506,6 @@ h1 {
     
 
     /*Kontakt siden*/
-
     .kontaktbillede {
         height: 350px;
     }
@@ -475,7 +515,8 @@ h1 {
         line-height: 35px;
     }
 
-    /*Portfolio*/
+
+    /*Portfolio siden*/
     .billede1 {
         width: 300px;
         margin-top: 20px;
@@ -500,7 +541,6 @@ h1 {
         width: 300px;
         height: auto;
     }
-    
     
     .blackbox2 {
         height: 2480px;
@@ -537,19 +577,19 @@ h1 {
         left: 65px;
         top: 2345px;
     }
-    
-
 }
 
+
+/*Computer versionen!*/
 @media only screen and (min-width: 1024px) {
 
-    /*Web versionen forsiden*/
+    /*Computer versionen forsiden*/
     body {
         background-size: 600px 940px;
         background-position-y: 100px;
     }
 
-
+    /*Bokse på forsiden*/
     .portfolioforside {
         height: 240px;
         width: 252px;
@@ -595,10 +635,12 @@ h1 {
         top: 45px;
     }
 
+    /*Tekst på forsiden*/
     .paragraf {
         font-size: 16px;
     }
 
+    /*Knapperne på forsiden*/
     .knapforside {
         height: 30px;
         width: 120px;
@@ -612,7 +654,9 @@ h1 {
         left: 25px;
     }
 
-    .flexcontainer > div {
+    /*boksene på forsiden skal være ved siden af hinanden -> 
+    hvor block starter ny linje, gør in-line ikke, så de kan være ved siden af hinanden*/
+    main > div {
         display: inline-block;
     }
 
@@ -621,19 +665,19 @@ h1 {
     }
 
     .forsideknap {
-        right: 420px;
+        right: 387px;
     }
 
     .portfolioknap {
-        right: 310px;
+        right: 277px;
     }
 
     .ommigknap {
-        right: 200px;
+        right: 167px;
     }
 
     .kontaktknap {
-        right: 90px;
+        right: 57px;
     }
 
     .tekstknapf {
@@ -641,15 +685,18 @@ h1 {
         font-size: 16px;
     }
 
+
     /*Om mig siden*/
     .blackbox {
         height: 600px;
         width: 1150px;
         top: 45px;
+        left: 50px;
     }
     
     h1 {
         font-size: 40px;
+        margin-top: 0px;
     }
     
     .paragrafom {
@@ -684,6 +731,7 @@ h1 {
     
     /*Portfolio siden*/
     
+    /*Billeder på portfolio siden*/
     .billede1 {
         height: 333px;
         width: auto;
@@ -725,8 +773,10 @@ h1 {
         width: 1150px;
         position: relative;
         top: 45px;
+        left: 50px;
     }
 
+    /*Tekst under billederne*/
     .billedetekst {
         font-size: 16px;
     }
