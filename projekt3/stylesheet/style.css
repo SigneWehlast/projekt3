@@ -688,7 +688,7 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
 
     /*Om mig siden*/
     .blackbox {
-        height: 600px;
+        height: 575px;
         width: 1150px;
         top: 45px;
         left: 50px;
@@ -701,33 +701,40 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
     
     .paragrafom {
         font-size: 22px;
-        line-height: 35px;
-        margin-left: 50px;
-        margin-top: -340px;
+        line-height: 30px;
+        display: inline-block;
+        position: absolute;
+        vertical-align: middle;
         width: 333px;
+        margin-left: 50px;
     }
     
     .ommigbillede {
-        height: 333px;
-        margin-right: 50px;
-        margin-top: 70px;
+        width: 333px;
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        right: 50px;
     }
 
 
     /*Kontakt siden*/
     .kontaktbillede {
-        height: 333px;
+        width: 333px;
         margin-left: 50px;
-        margin-top: 70px;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .paragrafkontakt {
         font-size: 22px;
         line-height: 35px;
-        margin-left: 766px;
-        margin-top: -340px;
-        width: 333px; 
+        margin-left: 383px;
+        width: 333px;
+        display: inline-block;
+        vertical-align: middle;
     }
+
     
     /*Portfolio siden*/
     
