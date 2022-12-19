@@ -371,17 +371,17 @@ h1 {
 
 .p3 {
     left: 95px;
-    top: 1320px;
+    top: 1330px;
 }
 
 .p4 {
     left: 95px;
-    top: 1575px;
+    top: 1585px;
 }
 
 .p5 {
     left: 60px;
-    top: 1980px;
+    top: 1990px;
 }
 
 
@@ -450,7 +450,7 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
 
     /*Tekst på forsiden*/
     .tekstforside {
-        top: 75px;
+        top: 80px;
         left: 15px;
     }
 
@@ -555,27 +555,27 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
     
     .p1 {
        left: 90px;  
-       top: 525px;
+       top: 535px;
     }
     
     .p2 {
         left: 90px;
-        top: 1055px;
+        top: 1065px;
     }
     
     .p3 {
         left: 90px;
-        top: 1625px;
+        top: 1635px;
     }
     
     .p4 {
         left: 90px;
-        top: 1930px;
+        top: 1940px;
     }
     
     .p5 {
-        left: 65px;
-        top: 2345px;
+        left: 45px;
+        top: 2355px;
     }
 }
 
@@ -650,7 +650,7 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
     }
 
     .tekstforside {
-        top: 70px;
+        top: 65px;
         left: 25px;
     }
 
