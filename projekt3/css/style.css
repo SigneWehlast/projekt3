@@ -3,7 +3,7 @@ body {
     /*Bodyen er altid højden på webbrowserens viewport (billedet på skærmen)*/
     min-height: 100vh;
     background-color: #F6F1C8;
-    background-image: url('img/symboler.png');
+    background-image: url('../img/symboler.png');
     background-size: 600px 940px;
     background-position-y: 100px;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .logo {
-    background: url('img/logonyt2_Tegnebræt\ 1.png') no-repeat;
+    background: url('../img/logonyt2_Tegnebræt\ 1.png') no-repeat;
     width: 110px;
     height: 110px;
     /*Er positioneret relativt i forhold til dens normale position på siden*/
@@ -117,6 +117,7 @@ body {
     color: white;
     /*Gør så der ikke er streg under linket*/
     text-decoration: none;
+    top: 2px;
 }
 
 /*Tekst i bokse på forsiden*/
@@ -314,7 +315,7 @@ h1 {
     width: 333px;
     height: 333px;
     /*Skal starte i punkt 0 0 og ikke gentages*/
-    background: url('img/delfin.png') 0 0 no-repeat;
+    background: url('../img/delfin.png') 0 0 no-repeat;
     /*skal vare i 3 sekunder, er i 6 billeder og skal fortsætte med at køre*/
     animation: delfin 3s steps(6) infinite;
     margin: auto;
@@ -393,7 +394,7 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
     body {
         min-height: 100vh;
         background-color: #F6F1C8;
-        background-image: url('img/symboler.png');
+        background-image: url('../img/symboler.png');
         background-size: 600px 940px;
         background-position-y: 190px;
     }
@@ -446,6 +447,10 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
         top: 85px;
         left: 50px;
         border-radius: 30px;
+    }
+
+    .tekstknap {
+        top: 3px;
     }
 
     /*Tekst på forsiden*/
@@ -652,6 +657,10 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
     .tekstforside {
         top: 65px;
         left: 25px;
+    }
+
+    .tekstknap {
+        top: 0px;
     }
 
     /*boksene på forsiden skal være ved siden af hinanden -> 
