@@ -431,7 +431,7 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
         height: 51px;
         width: 87px;
         position: absolute;
-        top: 10px;
+        top: 15px;
         left: 80px;
     }
 
@@ -586,7 +586,7 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
 
 
 /*Computer versionen!*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1080px) {
 
     /*Computer versionen forsiden*/
     body {
@@ -631,7 +631,7 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
         height: 50px;
         width: 85px;
         position: absolute;
-        top: 10px;
+        top: 15px;
         left: 80px;
     }
 
@@ -712,7 +712,6 @@ De værdier som er i mobilversionen gemmes, derfor skal kun de værdier, som ska
         font-size: 22px;
         line-height: 30px;
         display: inline-block;
-        position: absolute;
         vertical-align: middle;
         width: 333px;
         margin-left: 50px;
